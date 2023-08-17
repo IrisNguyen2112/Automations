@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230817 16:25:48.941" rpa="false" schemaversion="4">
+<suite id="s1" name="Installation" source="C:\Users\nhtnguyen\PycharmProjects\Automation_ToolE\TestCase\Installation.robot">
+<test id="s1-t1" name="Installation ToolE module" line="12">
+<kw name="Open Browser, Log in and verify landing page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230817 16:25:49.489" level="INFO">Opening browser 'Chrome' to base url 'http://presta804.local/admin804'.</msg>
+<msg timestamp="20230817 16:25:50.379" level="WARN">The chromedriver version (115.0.5790.170) detected in PATH at C:\Users\nhtnguyen\Browserdriver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.97); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20230817 16:25:49.488" endtime="20230817 16:25:54.581"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230817 16:25:54.582" endtime="20230817 16:25:54.715"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="logo"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230817 16:25:54.731" level="INFO">Current page contains element 'xpath://*[@id="logo"]'.</msg>
+<status status="PASS" starttime="20230817 16:25:54.715" endtime="20230817 16:25:54.731"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="email"]</arg>
+<arg>tester@inter-soft.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230817 16:25:54.732" level="INFO">Typing text 'tester@inter-soft.com' into text field 'xpath://*[@id="email"]'.</msg>
+<status status="PASS" starttime="20230817 16:25:54.731" endtime="20230817 16:25:54.876"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath://*[@id="passwd"]</arg>
+<arg>Nguyen@211220</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230817 16:25:54.877" level="INFO">Typing password into text field 'xpath://*[@id="passwd"]'.</msg>
+<msg timestamp="20230817 16:25:54.918" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230817 16:25:55.012" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230817 16:25:54.876" endtime="20230817 16:25:55.012"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="submit_login"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230817 16:25:55.013" level="INFO">Clicking button 'xpath://*[@id="submit_login"]'.</msg>
+<status status="PASS" starttime="20230817 16:25:55.012" endtime="20230817 16:25:55.104"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="content"]/div[1]/div/div/h1</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230817 16:25:55.104" endtime="20230817 16:26:06.240"/>
+</kw>
+<status status="PASS" starttime="20230817 16:25:49.487" endtime="20230817 16:26:06.240"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="subtab-AdminParentModulesSf"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230817 16:26:06.242" level="INFO">Clicking element 'xpath://*[@id="subtab-AdminParentModulesSf"]/a'.</msg>
+<status status="PASS" starttime="20230817 16:26:06.241" endtime="20230817 16:26:13.822"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="subtab-AdminModulesSf"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230817 16:26:13.824" level="INFO">Clicking element 'xpath://*[@id="subtab-AdminModulesSf"]/a'.</msg>
+<status status="PASS" starttime="20230817 16:26:13.823" endtime="20230817 16:26:18.996"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="page-header-desc-configuration-add_module"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230817 16:26:18.996" endtime="20230817 16:26:19.096"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[@id="page-header-desc-configuration-add_module"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230817 16:26:19.098" level="INFO">Clicking link 'xpath://*[@id="page-header-desc-configuration-add_module"]'.</msg>
+<status status="PASS" starttime="20230817 16:26:19.096" endtime="20230817 16:26:19.223"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="module-modal-import"]/div/div/div[1]/h4</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230817 16:26:19.224" endtime="20230817 16:26:19.523"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>xpath://*[@id="importDropzone"]/input</arg>
+<arg>${FILE_PATH}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20230817 16:26:19.524" level="INFO">Sending C:\Users\nhtnguyen\PycharmProjects\Automation_ToolE\ATM_modules\tooleamazonmarkettool_1.1.0.zip to browser.</msg>
+<status status="PASS" starttime="20230817 16:26:19.523" endtime="20230817 16:26:19.606"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 minutes</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230817 16:27:19.617" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20230817 16:26:19.607" endtime="20230817 16:27:19.617"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@class="module-import-success-configure btn btn-primary-reverse btn-outline-primary light-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230817 16:27:19.619" level="INFO">Clicking element 'xpath://*[@class="module-import-success-configure btn btn-primary-reverse btn-outline-primary light-button"]'.</msg>
+<status status="PASS" starttime="20230817 16:27:19.618" endtime="20230817 16:28:41.593"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 minutes</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230817 16:29:41.595" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20230817 16:28:41.594" endtime="20230817 16:29:41.595"/>
+</kw>
+<status status="PASS" starttime="20230817 16:25:49.486" endtime="20230817 16:29:41.595"/>
+</test>
+<doc>ATM - ToolE</doc>
+<status status="PASS" starttime="20230817 16:25:48.945" endtime="20230817 16:29:41.598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Installation">Installation</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230817 16:25:49.485" level="WARN">Imported library 'AutoItLibrary3' contains no keywords.</msg>
+<msg timestamp="20230817 16:25:50.379" level="WARN">The chromedriver version (115.0.5790.170) detected in PATH at C:\Users\nhtnguyen\Browserdriver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.97); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
