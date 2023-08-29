@@ -7,13 +7,12 @@ Library    Collections
 *** Variables ***
 ${BROWSER}       Chrome
 ${URL}           http://presta804.local/admin804
-${FILE_PATH}     C:\\Users\\nhtnguyen\\PycharmProjects\\Automation_ToolE\\ATM_modules\\tooleamazonmarkettool_1.1.0.zip
 
 *** Test cases ***
 Import Orders
     Open Browser, Log in and verify landing page
 
-#   Navigate to Module Manager tab
+#   Navigate to Import Orders tab
     Click Link    xpath://*[@id="subtab-ToolEAmazonMarketOrderTab"]/a
     Click Link    xpath://*[@id="subtab-ToolEAmazonMarketOrderAmazonTab"]/a
     Wait Until Element Is Visible    xpath://*[@id="form-toole_amt_amazon_orders"]/div/div[1]
@@ -32,9 +31,9 @@ Import Orders
 #    ${checkboxes}=    Get WebElements    xpath://input[@type='checkbox']
 #    ${random_index}=    Evaluate    random.randint(0, ${checkboxes.__len__()} - 1)
 #    Click Element    ${checkboxes[${random_index}]}
-    ${checkboxes}=    Get WebElements    xpath=//input[@type='checkbox']
-    ${second_checkbox}=    Set Variable    ${checkboxes}[1]
-    Click Element    ${second_checkbox}
+#    ${checkboxes}=    Get WebElements    xpath=//input[@type='checkbox']
+#    ${second_checkbox}=    Set Variable    ${checkboxes}[1]
+    Click Element    //*[text()='408-6704218-9595556']
     Click Button    xpath://*[@id="import-order"]
     Wait Until Page Contains    SKU/Reference not found
 

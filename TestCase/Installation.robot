@@ -12,25 +12,25 @@ ${FILE_PATH}     C:\\Users\\nhtnguyen\\PycharmProjects\\Automation_ToolE\\ATM_mo
 Installation ToolE module
     Open Browser, Log in and verify landing page
     
-#   Navigate to Modulde Manager
+#   1. Navigate to Module > Module Manager
     Click Element   xpath://*[@id="subtab-AdminParentModulesSf"]/a
     Click Element    xpath://*[@id="subtab-AdminModulesSf"]/a
     Wait Until Element Is Visible    xpath://*[@id="page-header-desc-configuration-add_module"]
     
-#   Open upload dialog
+#   2. Click Upload a module button
     Click Link    xpath://*[@id="page-header-desc-configuration-add_module"]
     Wait Until Element Is Visible    xpath://*[@id="module-modal-import"]/div/div/div[1]/h4
 
-#   Upload module
+#   3. Select module from your desktop
     Choose File    xpath://*[@id="importDropzone"]/input    ${FILE_PATH}
     Sleep   1 minutes
     
-#   Navigate to ToolE conf page
+#   4. Navigate to ToolE conf page
     Click Element    xpath://*[@class="module-import-success-configure btn btn-primary-reverse btn-outline-primary light-button"]
     Sleep   1 minutes
     Page Should Contain Element    xpath://*[@id="tooleamazonmarkettool_form"]/div/div[1]/ul/li[1]/a
 
-Navigate to all pages
+#   Work around: Navigate to all pages
     Click Element    xpath://*[@id="tooleamazonmarkettool_form"]/div/div[1]/ul/li[2]/a
     Page Should Contain    Associate your shop with a PrestaShop account
     
