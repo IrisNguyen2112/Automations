@@ -40,36 +40,36 @@ ${WAIT_INTERVAL}    2
 #    Wait Until Element Is Visible    xpath://*[@id="form-identifier_key"]/div/div[1]
 
 #   4. Enter on Product ID search field: 21 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[2]/input    21
+    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[1]/input   21
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Wall HLD2221
     
-    Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[8]/span/button[2]
-    Wait Until Page Contains    Wall HLD2221
+    Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[7]/span/button[2]
+    Wait Until Element Does Not Contain    xpath://*[@id="table-product"]/thead/tr[2]/th[1]/input    21
 
 #   5. Enter on Product Attribute search field: 0 > Click Search button
     Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[3]/input    10
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    10
 
-    Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[8]/span/button[2]
-    Wait Until Page Contains    Wall HLD2221
+    Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[7]/span/button[2]
+    Wait Until Element Does Not Contain    xpath://*[@id="table-product"]/thead/tr[2]/th[3]/input    10
 
 #   6. Enter on SKU search field: 123ccTEST > Click Search button
     Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[4]/input    123ccTEST
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Wall HLD2221
 
-    Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[8]/span/button[2]
-    Wait Until Page Contains    Wall HLD2221
+    Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[7]/span/button[2]
+    Wait Until Element Does Not Contain    xpath://*[@id="table-product"]/thead/tr[2]/th[4]/input    123ccTEST
     
 #   7. Enter on Product Name search field: Wall HLD2221
     Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Wall HLD2221
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Wall HLD2221
 
-    Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[8]/span/button[2]
-    Wait Until Page Contains    Wall HLD2221
+    Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[7]/span/button[2]
+    Wait Until Element Does Not Contain    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/inpu    Wall HLD2221
 
 #   8. Click Quantity for sort
 #   9. Click Price for sort

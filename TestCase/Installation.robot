@@ -6,7 +6,7 @@ Library          AutoItLibrary3
 *** Variables ***
 ${BROWSER}       Chrome
 ${URL}           http://presta804.local/admin804
-${FILE_PATH}     C:\\Users\\nhtnguyen\\PycharmProjects\\Automation_ToolE\\ATM_modules\\tooleamazonmarkettool_1.1.0.zip
+${FILE_PATH}     C:\\Users\\nhtnguyen\\PycharmProjects\\Automation_ToolE\\ATM_modules\\tooleamazonmarkettool_1.1.1.zip
 
 *** Test Cases ***
 Installation ToolE module
@@ -14,7 +14,8 @@ Installation ToolE module
     
 #   1. Navigate to Module > Module Manager
     Click Element   xpath://*[@id="subtab-AdminParentModulesSf"]/a
-    Click Element    xpath://*[@id="subtab-AdminModulesSf"]/a
+    Wait Until Element Is Visible    xpath://*[@id="subtab-AdminParentModulesSf"]/a
+    Click Link  xpath://*[@id="subtab-AdminModulesSf"]/a
     Wait Until Element Is Visible    xpath://*[@id="page-header-desc-configuration-add_module"]
     
 #   2. Click Upload a module button
