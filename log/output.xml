@@ -1,81 +1,373 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230829 14:39:44.907" rpa="false" schemaversion="4">
-<suite id="s1" name="Debug" source="C:\Users\nhtnguyen\PycharmProjects\Automation_ToolE\TestCase\debug.robot">
-<test id="s1-t1" name="Debug" line="12">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230914 14:06:49.804" rpa="false" schemaversion="4">
+<suite id="s1" name="View Filter tab" source="C:\Users\nhtnguyen\PycharmProjects\Automation_ToolE\TestCase\View_Filter_tab.robot">
+<test id="s1-t1" name="Filter tab" line="12">
 <kw name="Open Browser, Log in and verify landing page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230829 14:39:45.454" level="INFO">Opening browser 'Chrome' to base url 'http://presta804.local/admin804'.</msg>
-<msg timestamp="20230829 14:39:46.076" level="WARN">The chromedriver version (115.0.5790.170) detected in PATH at C:\Users\nhtnguyen\Browserdriver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.111); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
-<status status="PASS" starttime="20230829 14:39:45.453" endtime="20230829 14:39:49.986"/>
+<msg timestamp="20230914 14:06:50.328" level="INFO">Opening browser 'Chrome' to base url 'http://presta804.local/admin804'.</msg>
+<msg timestamp="20230914 14:06:51.003" level="WARN">The chromedriver version (115.0.5790.170) detected in PATH at C:\Users\nhtnguyen\Browserdriver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.188); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20230914 14:06:50.328" endtime="20230914 14:06:54.649"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230829 14:39:49.987" endtime="20230829 14:39:50.104"/>
+<status status="PASS" starttime="20230914 14:06:54.650" endtime="20230914 14:06:54.766"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="logo"]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230829 14:39:50.120" level="INFO">Current page contains element 'xpath://*[@id="logo"]'.</msg>
-<status status="PASS" starttime="20230829 14:39:50.105" endtime="20230829 14:39:50.120"/>
+<msg timestamp="20230914 14:06:54.781" level="INFO">Current page contains element 'xpath://*[@id="logo"]'.</msg>
+<status status="PASS" starttime="20230914 14:06:54.766" endtime="20230914 14:06:54.782"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@id="email"]</arg>
 <arg>tester@inter-soft.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230829 14:39:50.121" level="INFO">Typing text 'tester@inter-soft.com' into text field 'xpath://*[@id="email"]'.</msg>
-<status status="PASS" starttime="20230829 14:39:50.121" endtime="20230829 14:39:50.286"/>
+<msg timestamp="20230914 14:06:54.782" level="INFO">Typing text 'tester@inter-soft.com' into text field 'xpath://*[@id="email"]'.</msg>
+<status status="PASS" starttime="20230914 14:06:54.782" endtime="20230914 14:06:54.924"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>xpath://*[@id="passwd"]</arg>
 <arg>Nguyen@211220</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230829 14:39:50.288" level="INFO">Typing password into text field 'xpath://*[@id="passwd"]'.</msg>
-<msg timestamp="20230829 14:39:50.328" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230829 14:39:50.412" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230829 14:39:50.287" endtime="20230829 14:39:50.412"/>
+<msg timestamp="20230914 14:06:54.925" level="INFO">Typing password into text field 'xpath://*[@id="passwd"]'.</msg>
+<msg timestamp="20230914 14:06:54.959" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230914 14:06:55.032" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230914 14:06:54.924" endtime="20230914 14:06:55.032"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath://*[@id="submit_login"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230829 14:39:50.414" level="INFO">Clicking button 'xpath://*[@id="submit_login"]'.</msg>
-<status status="PASS" starttime="20230829 14:39:50.413" endtime="20230829 14:39:50.506"/>
+<msg timestamp="20230914 14:06:55.033" level="INFO">Clicking button 'xpath://*[@id="submit_login"]'.</msg>
+<status status="PASS" starttime="20230914 14:06:55.032" endtime="20230914 14:06:55.113"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath://*[@id="content"]/div[1]/div/div/h1</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230829 14:39:50.507" endtime="20230829 14:39:56.857"/>
+<status status="PASS" starttime="20230914 14:06:55.114" endtime="20230914 14:07:01.095"/>
 </kw>
-<status status="PASS" starttime="20230829 14:39:45.452" endtime="20230829 14:39:56.858"/>
+<status status="PASS" starttime="20230914 14:06:50.326" endtime="20230914 14:07:01.095"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="subtab-AdminParentModulesSf"]/a</arg>
+<arg>xpath://*[@id="subtab-ToolEAmazonMarketCatalogTab"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230829 14:39:56.860" level="INFO">Clicking element 'xpath://*[@id="subtab-AdminParentModulesSf"]/a'.</msg>
-<status status="PASS" starttime="20230829 14:39:56.858" endtime="20230829 14:39:56.977"/>
+<msg timestamp="20230914 14:07:01.097" level="INFO">Clicking element 'xpath://*[@id="subtab-ToolEAmazonMarketCatalogTab"]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:01.096" endtime="20230914 14:07:01.295"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="subtab-ToolEAmazonMarketCatalogFilters"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:01.297" level="INFO">Clicking element 'xpath://*[@id="subtab-ToolEAmazonMarketCatalogFilters"]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:01.296" endtime="20230914 14:07:04.950"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath://*[@id="subtab-AdminParentModulesSf"]/a</arg>
+<arg>xpath://*[@id="content"]/div[1]/div/div[1]/h1</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230829 14:39:56.977" endtime="20230829 14:39:57.032"/>
+<status status="PASS" starttime="20230914 14:07:04.951" endtime="20230914 14:07:04.995"/>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>xpath://*[@id="subtab-AdminModulesSf"]/a</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230829 14:39:57.034" level="INFO">Clicking link 'xpath://*[@id="subtab-AdminModulesSf"]/a'.</msg>
-<status status="PASS" starttime="20230829 14:39:57.033" endtime="20230829 14:40:04.248"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:04.996" level="INFO">Clicking element 'xpath://*[@id="table-product"]/tbody/tr[1]/td[6]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:04.995" endtime="20230914 14:07:09.432"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath://*[@src="/modules/tooleamazonmarkettool/logo.png"]</arg>
+<arg>xpath://*[@id="table-product"]/tbody/tr[1]/td[6]/a</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230829 14:40:04.249" endtime="20230829 14:40:04.291"/>
+<status status="PASS" starttime="20230914 14:07:09.433" endtime="20230914 14:07:09.499"/>
 </kw>
-<status status="PASS" starttime="20230829 14:39:45.451" endtime="20230829 14:40:04.292"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:09.501" level="INFO">Clicking element 'xpath://*[@id="table-product"]/tbody/tr[1]/td[6]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:09.500" endtime="20230914 14:07:14.560"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:14.560" endtime="20230914 14:07:14.596"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[2]/td[7]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:14.597" level="INFO">Clicking element 'xpath://*[@id="table-product"]/tbody/tr[2]/td[7]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:14.596" endtime="20230914 14:07:18.878"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[2]/td[7]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:18.879" endtime="20230914 14:07:18.939"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[2]/td[7]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:18.941" level="INFO">Clicking element 'xpath://*[@id="table-product"]/tbody/tr[2]/td[7]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:18.939" endtime="20230914 14:07:23.127"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[2]/td[7]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:23.128" endtime="20230914 14:07:23.176"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[3]/td[8]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:23.177" level="INFO">Clicking element 'xpath://*[@id="table-product"]/tbody/tr[3]/td[8]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:23.176" endtime="20230914 14:07:27.318"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[3]/td[8]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:27.319" endtime="20230914 14:07:27.357"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[3]/td[8]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:27.358" level="INFO">Clicking element 'xpath://*[@id="table-product"]/tbody/tr[3]/td[8]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:27.357" endtime="20230914 14:07:31.659"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-product"]/tbody/tr[3]/td[8]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:31.659" endtime="20230914 14:07:31.705"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="subtab-ToolEAmazonMarketCatalogFiltersManufacturers"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:31.706" level="INFO">Clicking element 'xpath://*[@id="subtab-ToolEAmazonMarketCatalogFiltersManufacturers"]'.</msg>
+<status status="PASS" starttime="20230914 14:07:31.705" endtime="20230914 14:07:34.076"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="form-manufacturer"]/div/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:34.076" endtime="20230914 14:07:34.119"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:34.120" level="INFO">Clicking element 'xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[4]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:34.119" endtime="20230914 14:07:38.077"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[4]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:38.077" endtime="20230914 14:07:38.116"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:38.118" level="INFO">Clicking element 'xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[4]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:38.117" endtime="20230914 14:07:42.605"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[4]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:42.605" endtime="20230914 14:07:42.635"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:42.636" level="INFO">Clicking element 'xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[5]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:42.636" endtime="20230914 14:07:46.810"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[5]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:46.811" endtime="20230914 14:07:46.865"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:46.867" level="INFO">Clicking element 'xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[5]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:46.866" endtime="20230914 14:07:50.985"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[5]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:50.986" endtime="20230914 14:07:51.024"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:51.026" level="INFO">Clicking element 'xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[6]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:51.025" endtime="20230914 14:07:55.126"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[6]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:55.126" endtime="20230914 14:07:55.165"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:55.167" level="INFO">Clicking element 'xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[6]/a'.</msg>
+<status status="PASS" starttime="20230914 14:07:55.166" endtime="20230914 14:07:59.256"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-manufacturer"]/tbody/tr[2]/td[6]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:07:59.256" endtime="20230914 14:07:59.286"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="subtab-ToolEAmazonMarketCatalogFiltersSuppliers"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:07:59.288" level="INFO">Clicking element 'xpath://*[@id="subtab-ToolEAmazonMarketCatalogFiltersSuppliers"]'.</msg>
+<status status="PASS" starttime="20230914 14:07:59.286" endtime="20230914 14:08:01.686"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="form-supplier"]/div/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:01.687" endtime="20230914 14:08:01.721"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:01.722" level="INFO">Clicking element 'xpath://*[@id="table-supplier"]/tbody/tr[1]/td[4]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:01.721" endtime="20230914 14:08:05.757"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[4]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:05.758" endtime="20230914 14:08:05.803"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:05.804" level="INFO">Clicking element 'xpath://*[@id="table-supplier"]/tbody/tr[1]/td[4]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:05.803" endtime="20230914 14:08:10.071"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[4]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:10.071" endtime="20230914 14:08:10.113"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:10.115" level="INFO">Clicking element 'xpath://*[@id="table-supplier"]/tbody/tr[1]/td[5]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:10.114" endtime="20230914 14:08:14.214"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[5]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:14.215" endtime="20230914 14:08:14.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:14.246" level="INFO">Clicking element 'xpath://*[@id="table-supplier"]/tbody/tr[1]/td[5]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:14.245" endtime="20230914 14:08:18.496"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[5]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:18.496" endtime="20230914 14:08:18.545"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:18.547" level="INFO">Clicking element 'xpath://*[@id="table-supplier"]/tbody/tr[1]/td[6]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:18.546" endtime="20230914 14:08:22.480"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:22.480" endtime="20230914 14:08:22.512"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:22.514" level="INFO">Clicking element 'xpath://*[@id="table-supplier"]/tbody/tr[1]/td[6]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:22.513" endtime="20230914 14:08:26.467"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-supplier"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:26.467" endtime="20230914 14:08:26.521"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="subtab-ToolEAmazonMarketCatalogFiltersCategories"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:26.522" level="INFO">Clicking element 'xpath://*[@id="subtab-ToolEAmazonMarketCatalogFiltersCategories"]'.</msg>
+<status status="PASS" starttime="20230914 14:08:26.521" endtime="20230914 14:08:29.131"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="form-category"]/div/div[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:29.131" endtime="20230914 14:08:29.182"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:29.183" level="INFO">Clicking element 'xpath://*[@id="table-category"]/tbody/tr[1]/td[4]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:29.182" endtime="20230914 14:08:33.461"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[4]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:33.461" endtime="20230914 14:08:33.521"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:33.522" level="INFO">Clicking element 'xpath://*[@id="table-category"]/tbody/tr[1]/td[4]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:33.522" endtime="20230914 14:08:37.542"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[4]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:37.542" endtime="20230914 14:08:37.576"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:37.578" level="INFO">Clicking element 'xpath://*[@id="table-category"]/tbody/tr[1]/td[5]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:37.577" endtime="20230914 14:08:42.028"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[5]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:42.028" endtime="20230914 14:08:42.064"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:42.065" level="INFO">Clicking element 'xpath://*[@id="table-category"]/tbody/tr[1]/td[5]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:42.064" endtime="20230914 14:08:46.243"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[5]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:46.243" endtime="20230914 14:08:46.277"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:46.278" level="INFO">Clicking element 'xpath://*[@id="table-category"]/tbody/tr[1]/td[6]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:46.277" endtime="20230914 14:08:50.569"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:50.570" endtime="20230914 14:08:50.605"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 14:08:50.605" level="INFO">Clicking element 'xpath://*[@id="table-category"]/tbody/tr[1]/td[6]/a'.</msg>
+<status status="PASS" starttime="20230914 14:08:50.605" endtime="20230914 14:08:55.089"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="table-category"]/tbody/tr[1]/td[6]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230914 14:08:55.089" endtime="20230914 14:08:55.121"/>
+</kw>
+<status status="PASS" starttime="20230914 14:06:50.325" endtime="20230914 14:08:55.121"/>
 </test>
 <doc>ATM - ToolE</doc>
-<status status="PASS" starttime="20230829 14:39:44.911" endtime="20230829 14:40:04.293"/>
+<status status="PASS" starttime="20230914 14:06:49.807" endtime="20230914 14:08:55.122"/>
 </suite>
 <statistics>
 <total>
@@ -84,10 +376,10 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Debug">Debug</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="View Filter tab">View Filter tab</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230829 14:39:46.076" level="WARN">The chromedriver version (115.0.5790.170) detected in PATH at C:\Users\nhtnguyen\Browserdriver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.111); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20230914 14:06:51.003" level="WARN">The chromedriver version (115.0.5790.170) detected in PATH at C:\Users\nhtnguyen\Browserdriver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.188); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

@@ -19,7 +19,7 @@ PS_Amazon_Uninstall ToolE_Optional: delete module folder after uninstall Yes
     Wait Until Element Is Visible    xpath://*[@src="/modules/tooleamazonmarkettool/logo.png"]
     
 #   2. Enter keyword on Search filed
-    Input Text    xpath://*[@id="search-input-group"]/div[1]/div[2]/input    ToolE - Amazon Market Tool
+    Input Text    xpath://*[@id="search-input-group"]/div[1]/div[2]/input    ToolE
     
 #   3. Click Search button
     Click Element    xpath://*[@id="module-search-button"]

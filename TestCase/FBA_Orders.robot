@@ -14,6 +14,7 @@ ${URL}           http://presta804.local/admin804
 
 #   1. Navigate to Amazon Market Tool > Orders > FBA Orders
     Click Link    xpath://*[@id="subtab-ToolEAmazonMarketOrderTab"]/a
+    Wait Until Element Is Visible    xpath://*[@id="subtab-ToolEAmazonMarketFbaOrderTab"]/a
     Click Link    xpath://*[@id="subtab-ToolEAmazonMarketFbaOrderTab"]/a
     Wait Until Element Is Visible    xpath://*[@id="form-orders"]/div/div[1]
 
@@ -59,6 +60,16 @@ ${URL}           http://presta804.local/admin804
 #   4. Navigate to FBA Orders
     Click Element    xpath://*[@id="subtab-ToolEAmazonMarketFbaOrderSynced"]
     Wait Until Element Is Visible    xpath://*[@id="form-toole_amt_fba_orders"]/div/div[1]
+
+Test UI FBA Orders page
+    Open Browser, Log in and verify landing page
+
+#   1. Navigate to Amazon Market Tool > Orders > FBA Orders
+    Click Link    xpath://*[@id="subtab-ToolEAmazonMarketOrderTab"]/a
+    Click Link    xpath://*[@id="subtab-ToolEAmazonMarketFbaOrderTab"]/a
+    Wait Until Element Is Visible    xpath://*[@id="form-orders"]/div/div[1]
+
+#   2.
 
 *** Keywords ***
 Open Browser, Log in and verify landing page

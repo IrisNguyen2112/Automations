@@ -23,6 +23,7 @@ ${WAIT_INTERVAL}    2
 
 #   1. Navigate to Amazon Market Tool > Catalog > Filters
     Click Element    xpath://*[@id="subtab-ToolEAmazonMarketCatalogTab"]/a
+    Wait Until Element Is Visible    xpath://*[@id="subtab-ToolEAmazonMarketCatalogFilters"]/a
     Click Element    xpath://*[@id="subtab-ToolEAmazonMarketCatalogFilters"]/a
     Wait Until Element Is Visible    xpath://*[@id="content"]/div[1]/div/div[1]/h1
 
@@ -40,36 +41,36 @@ ${WAIT_INTERVAL}    2
 #    Wait Until Element Is Visible    xpath://*[@id="form-identifier_key"]/div/div[1]
 
 #   4. Enter on Product ID search field: 21 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[1]/input   21
+    Input Text    xpath://*[@name="identifier_keyFilter_a!id_product"]   21
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Wall HLD2221
     
     Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[7]/span/button[2]
-    Wait Until Element Does Not Contain    xpath://*[@id="table-product"]/thead/tr[2]/th[1]/input    21
+    Wait Until Element Does Not Contain    xpath://*[@name="identifier_keyFilter_a!id_product"]    21
 
-#   5. Enter on Product Attribute search field: 0 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[3]/input    10
+#   5. Enter on Product Attribute search field: 10 > Click Search button
+    Input Text    xpath://*[@name="identifier_keyFilter_pa!id_product_attribute"]    10
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    10
 
     Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[7]/span/button[2]
-    Wait Until Element Does Not Contain    xpath://*[@id="table-product"]/thead/tr[2]/th[3]/input    10
+    Wait Until Element Does Not Contain    xpath://*[@name="identifier_keyFilter_pa!id_product_attribute"]    10
 
 #   6. Enter on SKU search field: 123ccTEST > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[4]/input    123ccTEST
+    Input Text    xpath://*[@name="identifier_keyFilter_a!reference"]    123ccTEST
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Wall HLD2221
 
     Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[7]/span/button[2]
-    Wait Until Element Does Not Contain    xpath://*[@id="table-product"]/thead/tr[2]/th[4]/input    123ccTEST
+    Wait Until Element Does Not Contain    xpath://*[@name="identifier_keyFilter_a!reference"]    123ccTEST
     
 #   7. Enter on Product Name search field: Wall HLD2221
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Wall HLD2221
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Wall HLD2221
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Wall HLD2221
 
     Click Element    xpath://*[@id="table-product"]/thead/tr[2]/th[7]/span/button[2]
-    Wait Until Element Does Not Contain    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/inpu    Wall HLD2221
+    Wait Until Element Does Not Contain    xpath://*[@name="identifier_keyFilter_pl!name"]    Wall HLD2221
 
 #   8. Click Quantity for sort
 #   9. Click Price for sort
@@ -89,7 +90,7 @@ ${WAIT_INTERVAL}    2
     Click Element    xpath://*[@id="subtab-ToolEAmazonMarketProductSyncFromPrestashop"]/a
     Wait Until Element Is Visible    xpath://*[@id="form-identifier_key"]/div/div[1]
 
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Wall HLD2221
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Wall HLD2221
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Element Is Visible    xpath://*[@class="list-empty-msg"]
 
@@ -117,7 +118,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Customizable mug
 
 #   4. Enter on Product ID search field: 19 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[2]/input    19
+    Input Text    xpath://*[@name="identifier_keyFilter_a!id_product"]    19
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Customizable mug
 
@@ -125,7 +126,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   5. Enter on Product Attribute search field: 10 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[3]/input    10
+    Input Text    xpath://*[@name="identifier_keyFilter_pa!id_product_attribute"]    10
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    10
 
@@ -133,7 +134,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   6. Enter on SKU search field: demo_17
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[4]/input    demo_17
+    Input Text    xpath://*[@name="identifier_keyFilter_a!reference"]    demo_17
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Hummingbird cushion
 
@@ -141,7 +142,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   7. Enter on Product Name search field: Customizable mug
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Customizable mug
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Customizable mug
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Customizable mug
 
@@ -169,7 +170,7 @@ ${WAIT_INTERVAL}    2
     Click Element    xpath://*[@id="subtab-ToolEAmazonMarketProductSyncFromPrestashop"]/a
     Wait Until Element Is Visible    xpath://*[@id="form-identifier_key"]/div/div[1]
 
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Customizable mug
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Customizable mug
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Element Is Visible    xpath://*[@class="list-empty-msg"]
 
@@ -197,7 +198,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Customizable mug
 
 #   4. Enter on Product ID search field: 19 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[2]/input    19
+    Input Text    xpath://*[@name="identifier_keyFilter_a!id_product"]    19
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Customizable mug
 
@@ -205,7 +206,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   5. Enter on Product Attribute search field: 10 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[3]/input    10
+    Input Text    xpath://*[@name="identifier_keyFilter_pa!id_product_attribute"]    10
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    10
 
@@ -213,7 +214,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   6. Enter on SKU search field: demo_17
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[4]/input    demo_17
+    Input Text    xpath://*[@name="identifier_keyFilter_a!reference"]    demo_17
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Hummingbird cushion
 
@@ -221,7 +222,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   7. Enter on Product Name search field: Customizable mug
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Customizable mug
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Customizable mug
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Customizable mug
 
@@ -249,7 +250,7 @@ ${WAIT_INTERVAL}    2
     Click Element    xpath://*[@id="subtab-ToolEAmazonMarketProductSyncFromPrestashop"]/a
     Wait Until Element Is Visible    xpath://*[@id="form-identifier_key"]/div/div[1]
 
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Customizable mug
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Customizable mug
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Element Is Visible    xpath://*[@class="list-empty-msg"]
 
@@ -277,7 +278,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Customizable mug
 
 #   4. Enter on Product ID search field: 19 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[2]/input    19
+    Input Text    xpath://*[@name="identifier_keyFilter_a!id_product"]    19
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Customizable mug
 
@@ -285,7 +286,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   5. Enter on Product Attribute search field: 10 > Click Search button
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[3]/input    10
+    Input Text    xpath://*[@name="identifier_keyFilter_pa!id_product_attribute"]    10
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    10
 
@@ -293,7 +294,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   6. Enter on SKU search field: demo_17
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[4]/input    demo_17
+    Input Text    xpath://*[@name="identifier_keyFilter_a!reference"]    demo_17
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Hummingbird cushion
 
@@ -301,7 +302,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Page Contains    Hummingbird printed t-shirt
 
 #   7. Enter on Product Name search field: Customizable mug
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Customizable mug
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Customizable mug
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Customizable mug
 
@@ -329,7 +330,7 @@ ${WAIT_INTERVAL}    2
     Click Element    xpath://*[@id="subtab-ToolEAmazonMarketProductSyncFromPrestashop"]/a
     Wait Until Element Is Visible    xpath://*[@id="form-identifier_key"]/div/div[1]
 
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Customizable mug
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Customizable mug
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Element Is Visible    xpath://*[@class="list-empty-msg"]
 
@@ -342,7 +343,7 @@ ${WAIT_INTERVAL}    2
     Wait Until Element Is Visible    xpath://*[@id="form-identifier_key"]/div/div[1]
     
 #   2. Click Export button: Product name: Wall HLD2221, Price: 12000000.000000, Quantity: 50
-    Input Text    xpath://*[@id="table-product"]/thead/tr[2]/th[5]/input    Wall HLD2221
+    Input Text    xpath://*[@name="identifier_keyFilter_pl!name"]    Wall HLD2221
     Click Element    xpath://*[@id="submitFilterButtonidentifier_key"]
     Wait Until Page Contains    Wall HLD2221
     
